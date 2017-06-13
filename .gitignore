@@ -1,0 +1,17 @@
+.a
+.dll
+.dylib
+.exe
+.merge-left
+.merge-right
+.mine
+.o
+.obj
+.prej
+.so
+.working
+/.git/
+.git
+.svn
+_svn
+svn-commit*.tmp

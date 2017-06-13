@@ -1,0 +1,6 @@
+20:25:53 **** Incremental Build of configuration Debug for project Dont_blink ****
+make all 
+make: Nothing to be done for `all'.
+
+20:25:53 Build Finished (took 348ms)
+

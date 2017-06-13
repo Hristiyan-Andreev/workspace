@@ -1,0 +1,6 @@
+23:47:08 **** Build of configuration Debug for project STM32L152RE_NUCLEO ****
+make all 
+make: *** No rule to make target `D:/Docs and stuff/STM32 Mats/Src/main.c', needed by `Example/User/main.o'.  Stop.
+
+23:47:09 Build Finished (took 134ms)
+
