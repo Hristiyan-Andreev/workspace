@@ -17,9 +17,8 @@
 uint8_t SysClockSource;
 
 static __IO uint32_t TimingDelay;		// Variable to store desired delay
-GPIO_InitTypeDef GPIOPortA;  			//Structure variable to save configuration settings for Port A
-ADC_InitTypeDef ADCInit;				// Struct for ADC Config
-RCC_ClocksTypeDef RCC_Clocks;			// Struct for getting clock values
+GPIO_InitTypeDef GPIOPortA;  //Structure variable to save configuration settings for Port A
+RCC_ClocksTypeDef RCC_Clocks;
 			
 void Init(void)
 {
@@ -34,14 +33,7 @@ void Init(void)
 	GPIOPortA.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_Init(GPIOA, &GPIOPortA);
 
-	ADC_DeInit(ADC1);    // Reset all ADC settings to default
-
-	ADCInit.ADC_Resolution = ADC_Resolution_10b;
-	ADCInit.ADC_ScanConvMode = DISABLE;
-	ADCInit.ADC_ContinuousConvMode = DISABLE;
-	ADCInit.ADC_DataAlign = ADC_DataAlign_Right;
-	ADCInit.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
-
+	ADC_DeInit(ADC1);
 
 	if (SysTick_Config(SystemCoreClock / 1000))
 	{

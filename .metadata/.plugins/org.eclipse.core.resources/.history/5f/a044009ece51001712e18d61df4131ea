@@ -36,11 +36,8 @@ void Init(void)
 
 	ADC_DeInit(ADC1);    // Reset all ADC settings to default
 
-	ADCInit.ADC_Resolution = ADC_Resolution_10b;
-	ADCInit.ADC_ScanConvMode = DISABLE;
-	ADCInit.ADC_ContinuousConvMode = DISABLE;
-	ADCInit.ADC_DataAlign = ADC_DataAlign_Right;
-	ADCInit.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
+
+
 
 
 	if (SysTick_Config(SystemCoreClock / 1000))

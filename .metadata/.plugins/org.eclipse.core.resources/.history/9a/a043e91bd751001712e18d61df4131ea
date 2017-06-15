@@ -40,7 +40,7 @@ void Init(void)
 	ADCInit.ADC_ScanConvMode = DISABLE;
 	ADCInit.ADC_ContinuousConvMode = DISABLE;
 	ADCInit.ADC_DataAlign = ADC_DataAlign_Right;
-	ADCInit.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
+	ADCInit.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;
 
 
 	if (SysTick_Config(SystemCoreClock / 1000))
