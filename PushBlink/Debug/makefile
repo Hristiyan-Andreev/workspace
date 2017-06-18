@@ -32,10 +32,10 @@ endif
 all: PushBlink.elf
 
 # Tool invocations
-PushBlink.elf: $(OBJS) $(USER_OBJS) C:\Users\Chris1\workspace\PushBlink\LinkerScript.ld
+PushBlink.elf: $(OBJS) $(USER_OBJS) D:\Documents\ and\ stuff\Project\ Avalanche\workspace\PushBlink\LinkerScript.ld
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU GCC Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"C:\Users\Chris1\workspace\PushBlink\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "PushBlink.elf" @"objects.list" $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"D:\Documents and stuff\Project Avalanche\workspace\PushBlink\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "PushBlink.elf" @"objects.list" $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

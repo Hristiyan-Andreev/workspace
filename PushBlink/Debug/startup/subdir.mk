@@ -15,7 +15,7 @@ startup/%.o: ../startup/%.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Assembler'
 	@echo %cd%
-	arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -I"C:/Users/Chris1/workspace/PushBlink/inc" -I"C:/Users/Chris1/workspace/PushBlink/CMSIS/core" -I"C:/Users/Chris1/workspace/PushBlink/CMSIS/device" -I"C:/Users/Chris1/workspace/PushBlink/StdPeriph_Driver/inc" -I"C:/Users/Chris1/workspace/PushBlink/Utilities" -g -o "$@" "$<"
+	arm-none-eabi-as -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -I"D:/Documents and stuff/Project Avalanche/workspace/PushBlink/inc" -I"D:/Documents and stuff/Project Avalanche/workspace/PushBlink/CMSIS/core" -I"D:/Documents and stuff/Project Avalanche/workspace/PushBlink/CMSIS/device" -I"D:/Documents and stuff/Project Avalanche/workspace/PushBlink/StdPeriph_Driver/inc" -I"D:/Documents and stuff/Project Avalanche/workspace/PushBlink/Utilities" -g -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
