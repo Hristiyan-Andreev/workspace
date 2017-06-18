@@ -36,11 +36,11 @@ void Init(void)
 
 	ADC_DeInit(ADC1);    // Reset all ADC settings to default
 
-	ADCInit.ADC_Resolution = ADC_Resolution_10b;
-	ADCInit.ADC_ScanConvMode = DISABLE;
-	ADCInit.ADC_ContinuousConvMode = DISABLE;
-	ADCInit.ADC_DataAlign = ADC_DataAlign_Right;
-	ADCInit.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
+	ADCInit.ADC_Resolution = ADC_Resolution_10b; // Select resolution
+	ADCInit.ADC_ScanConvMode = DISABLE;			// Disable scan mode -> Measure only one input
+	ADCInit.ADC_ContinuousConvMode = DISABLE;   // Disable continious mode -> measure only once
+	ADCInit.ADC_DataAlign = ADC_DataAlign_Right; // Align the 10bit data to the right
+	ADCInit.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None; // Don't wait for external trigger to convert
 
 
 	if (SysTick_Config(SystemCoreClock / 1000))
